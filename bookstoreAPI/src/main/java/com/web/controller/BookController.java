@@ -1,34 +1,26 @@
 package com.web.controller;
 
-import java.util.HashMap;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.AbstractController;
-
-import com.sun.javafx.collections.MappingChange.Map;
 
 
 @Controller
-//@RequestMapping("/book")
+@RequestMapping("/book")
 public class BookController{
 
-	//	@RequestMapping("/addBook")  
-	//	 public String addBook(
-	//			 @RequestParam String name) {  
-	//	  String result="Hello "+name;    
-	//	  return result;  
-	//	 }
+	@RequestMapping(value="/addBook",method=RequestMethod.GET)  
+	@ResponseBody
+		 public String addBook(
+				 @RequestParam String name) {  
+		  String result="Hello "+name;    
+		  return result;  
+		 }
 
 	@RequestMapping(value="/login.html",method=RequestMethod.GET)  
 	public ModelAndView login() {  
