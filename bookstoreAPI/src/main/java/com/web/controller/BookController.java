@@ -37,7 +37,7 @@ public class BookController{
 	@RequestMapping(value="/submission.html",method=RequestMethod.POST)  
 	public ModelAndView addBook(@RequestParam("id") String id,@RequestParam("pwd") String pwd) {  
 		ModelAndView mod=new ModelAndView("submitted");
-		mod.addObject("message", "Successfully entered information. Your username is "+ id+" and password is "+pwd);    
+		mod.addObject("message", "Successfully entered information. Your username is "+ id);    
 		return mod;  
 	}
 
