@@ -95,12 +95,13 @@
 		<div class="container">
 			<div class="title">
 				<h2>About Us</h2>
-				<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span> </div>
-			<p>This is <strong>PlainDisplay</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+				<!-- <span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>-->
+			 </div> 
+			<p>A online library to view books available in your college library. Books can be borrowed,requested or renewed through college account. The application provides various other functionalities like checking the quantity of books left in library,reviewing books through categories etc.</p>
 		</div>
-		<ul class="actions">
+		<!-- <ul class="actions">
 			<li><a href="#" class="button">Etiam posuere</a></li>
-		</ul>
+		</ul> -->
 	</div>
 	<div id="page" class="container">
 		<div class="title">
