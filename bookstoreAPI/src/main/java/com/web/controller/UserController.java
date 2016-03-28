@@ -12,6 +12,8 @@ import com.web.service.UserService;
 @RequestMapping("/user")
 public class UserController {
 	
+//	Testing purpose
+	
 	@Autowired
 	UserService userService;
 	
