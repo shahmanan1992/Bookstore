@@ -12,6 +12,7 @@
      <groupId>javax.servlet</groupId>  
      <artifactId>javax.servlet-api</artifactId>  
      <version>3.1.0</version>  
+      <scope>provided</scope>
     </dependency>  
     <dependency>
       <groupId>junit</groupId>
@@ -55,6 +56,19 @@
 	</dependency>
 	
 	<!-- Hibernate framework -->
+	
+	<dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate</artifactId>
+        <version>3.2.7.ga</version>
+    </dependency>
+    
+    <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>jtidy</artifactId>
+            <version>r8-20060801</version>
+        </dependency>
+        
 	 <dependency>
 	<groupId>org.hibernate</groupId>
 	<artifactId>hibernate-tools</artifactId>
@@ -80,7 +94,28 @@
     <version>5.1.0.Final</version>
 </dependency>
 
-	
+	<dependency>
+  <groupId>javax.persistence</groupId>
+  <artifactId>persistence-api</artifactId>
+  <version>1.0.2</version>
+</dependency>
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-entitymanager</artifactId>
+  <version>4.3.6.Final</version>
+</dependency>	
+
+<dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-annotations</artifactId>
+            <version>3.5.6-Final</version>
+        </dependency>
+        
+        <dependency>
+	<groupId>org.hibernate.common</groupId>
+	<artifactId>hibernate-commons-annotations</artifactId>
+	<version>4.0.4.Final</version>
+</dependency>
 	<!-- Hibernate library dependecy start -->
 	<dependency>
 		<groupId>dom4j</groupId>
@@ -114,7 +149,11 @@
 		<version>1.1</version>
 	</dependency>
   
-  
+  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.5.0</version>
+</dependency>  
   
 </dependencies>
   <build>
