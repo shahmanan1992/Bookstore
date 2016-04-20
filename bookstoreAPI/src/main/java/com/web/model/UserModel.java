@@ -9,44 +9,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="USER")
-public class User {
+public class UserModel {
 	
-    @Id
-    @Column(name="USER_ID")
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long userId;
-    
-    @Column(name="FIRST_NAME")
 	private String firstName;
-    
-    @Column(name="LAST_NAME")
 	private String lastName;
-    
-//   TODO : change mapping to college
-    @Column(name="COLLEGE_ID")
 	private long collegeId;
-    
-    @Column(name="ROLL_NO")
 	private BigInteger rollNo;
-    
-    @Column(name="PASSWRD")
 	private String password;
-    
-    @Column(name="USER_ADD_1")
 	private String userAdd1;
-    
-    @Column(name="USER_ADD_2")
 	private String userAdd2;
-    
-    @Column(name="USER_ADD_3")
 	private String userAdd3;
-    
-    @Column(name="USER_CITY")
 	private String userCity;
-    
-    @Column(name="USER_PIN")
 	private long userPin;
 	
 	public long getUserId() {
@@ -109,7 +83,12 @@ public class User {
 	public void setUserPin(long userPin) {
 		this.userPin = userPin;
 	}
-	
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}	
 	
 
 }

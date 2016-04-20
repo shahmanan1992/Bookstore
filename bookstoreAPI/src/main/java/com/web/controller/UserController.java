@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.web.model.User;
+import com.web.model.UserModel;
 import com.web.service.UserService;
 
 @RestController
@@ -18,7 +18,7 @@ public class UserController {
 	UserService userService;
 	
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
-	public void addUser(User user)
+	public void addUser(UserModel user)
 	{
 		userService.addUser(user);
 	}

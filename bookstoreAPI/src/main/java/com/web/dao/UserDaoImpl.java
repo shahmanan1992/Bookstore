@@ -5,7 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
-import com.web.model.User;
+import com.web.entity.User;
 
 @Repository
 public class UserDaoImpl implements UserDao{
@@ -19,7 +19,6 @@ public class UserDaoImpl implements UserDao{
 	        this.sessionFactory = sf;
 	    }
 
-	@Override
 	public void addUser(User user) {
 		  Session session = this.sessionFactory.getCurrentSession();
         session.persist(user);

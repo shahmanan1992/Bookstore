@@ -1,8 +1,8 @@
 package com.web.service;
 
-import com.web.model.User;
+import com.web.model.UserModel;
 
 public interface UserService {
 
-	public void addUser(User user);
+	void addUser(UserModel user);
 }
